@@ -1,0 +1,134 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 8.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[      3766,        125]
+NotebookOptionsPosition[      3174,         98]
+NotebookOutlinePosition[      3509,        113]
+CellTagsIndexPosition[      3466,        110]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["PiTwo", "Title",
+ CellChangeTimes->{{3.546363172501646*^9, 3.546363188573435*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Pointers", "Section",
+ CellChangeTimes->{{3.546433592466323*^9, 3.546433593488081*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"rotateDP", "[", "right", "]"}], "=", "down"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"rotateDP", "[", "down", "]"}], "=", "left"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"rotateDP", "[", "left", "]"}], "=", "up"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"rotateDP", "[", "up", "]"}], "=", "right"}], ";"}]}], "Input",
+ CellChangeTimes->{{3.546433598740757*^9, 3.546433625437978*^9}, {
+  3.546434142522624*^9, 3.54643416324716*^9}, {3.546434259448352*^9, 
+  3.546434264571697*^9}, {3.546434579504513*^9, 3.546434603487091*^9}, {
+  3.546434636858385*^9, 3.5464346394661922`*^9}, {3.546434679130237*^9, 
+  3.546434682711912*^9}, {3.5464349694287367`*^9, 3.546435017924143*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"toggleCC", "[", "left", "]"}], "=", "right"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"toggleCC", "[", "right", "]"}], "=", "left"}], ";"}]}], "Input",
+ CellChangeTimes->{{3.5464349947115393`*^9, 3.5464350042954884`*^9}, {
+  3.546435156651778*^9, 3.546435161302821*^9}, {3.546435202418655*^9, 
+  3.546435228677553*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Commands", "Section",
+ CellChangeTimes->{{3.546363238397828*^9, 3.546363239483057*^9}, {
+  3.5464332063651114`*^9, 3.546433208916119*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Push", "Subsection",
+ CellChangeTimes->{{3.5464333548056593`*^9, 3.546433356122568*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"push", "[", 
+   RowBox[{"codel_Integer", ",", "stack_List", ",", "dp_", ",", "cc_"}], 
+   "]"}], ":=", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"Append", "[", 
+     RowBox[{"stack", ",", "codel"}], "]"}], ",", "dp", ",", "cc"}], 
+   "}"}]}]], "Input",
+ CellChangeTimes->{{3.546433449186964*^9, 3.546433471657508*^9}, {
+  3.546433525428865*^9, 3.546433526331818*^9}, {3.546435562074349*^9, 
+  3.546435636892373*^9}, {3.546435709708085*^9, 3.546435711182378*^9}, {
+  3.546435760210754*^9, 3.546435786014432*^9}, {3.546435959875276*^9, 
+  3.5464359893583193`*^9}, {3.546436111957815*^9, 3.546436134507962*^9}, {
+  3.546436198513365*^9, 3.546436268534327*^9}, {3.5464363119296007`*^9, 
+  3.546436322087009*^9}, {3.546436353696329*^9, 3.5464363598300734`*^9}, {
+  3.546436436292802*^9, 3.5464364664282427`*^9}}]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{790, 832},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"8.1 for Linux x86 (64-bit) (December 23, 2010)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[579, 22, 88, 1, 83, "Title"],
+Cell[CellGroupData[{
+Cell[692, 27, 93, 1, 72, "Section"],
+Cell[788, 30, 805, 20, 88, "Input"],
+Cell[1596, 52, 394, 10, 50, "Input"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2027, 67, 144, 2, 72, "Section"],
+Cell[CellGroupData[{
+Cell[2196, 73, 94, 1, 37, "Subsection"],
+Cell[2293, 76, 841, 17, 30, "Input"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
