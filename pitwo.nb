@@ -10,7 +10,7 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       157,          7]
-NotebookDataLength[    172327,       4853]
+NotebookDataLength[    172326,       4853]
 NotebookOptionsPosition[    162259,       4532]
 NotebookOutlinePosition[    162593,       4547]
 CellTagsIndexPosition[    162550,       4544]
@@ -944,51 +944,6 @@ Cell[BoxData[
 
 Cell[BoxData[
  RowBox[{
-  RowBox[{"neighbors", "[", 
-   RowBox[{"program_", ",", 
-    RowBox[{"{", 
-     RowBox[{"posX_", ",", "posY_"}], "}"}]}], "]"}], ":=", 
-  RowBox[{"Module", "[", 
-   RowBox[{
-    RowBox[{"{", 
-     RowBox[{
-      RowBox[{"programMaxX", "=", 
-       RowBox[{"Length", "[", 
-        RowBox[{"program", "[", 
-         RowBox[{"[", "1", "]"}], "]"}], "]"}]}], ",", 
-      RowBox[{"programMaxY", "=", 
-       RowBox[{"Length", "[", "program", "]"}]}]}], "}"}], ",", 
-    RowBox[{"Cases", "[", 
-     RowBox[{
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{"{", 
-         RowBox[{
-          RowBox[{"posX", "+", "1"}], ",", "posY"}], "}"}], ",", 
-        RowBox[{"{", 
-         RowBox[{
-          RowBox[{"posX", "-", "1"}], ",", "posY"}], "}"}], ",", 
-        RowBox[{"{", 
-         RowBox[{"posX", ",", 
-          RowBox[{"posY", "+", "1"}]}], "}"}], ",", 
-        RowBox[{"{", 
-         RowBox[{"posX", ",", 
-          RowBox[{"posY", "-", "1"}]}], "}"}]}], "}"}], ",", 
-      RowBox[{
-       RowBox[{"{", 
-        RowBox[{"x_", ",", "y_"}], "}"}], "/;", 
-       RowBox[{"(", 
-        RowBox[{
-         RowBox[{"1", "\[LessEqual]", "x", "\[LessEqual]", "programMaxX"}], "&&", 
-         RowBox[{"1", "\[LessEqual]", "y", "\[LessEqual]", "programMaxY"}]}], 
-        ")"}]}]}], "]"}]}], "\[IndentingNewLine]", "]"}]}]], "Input",
- InitializationCell->True,
- CellChangeTimes->{{3.551278678155098*^9, 3.551278945427126*^9}, {
-  3.551280844891515*^9, 3.551280845731185*^9}, {3.551280949888956*^9, 
-  3.551280958661724*^9}, {3.551282602373014*^9, 3.551282751490451*^9}}],
-
-Cell[BoxData[
- RowBox[{
   RowBox[{
    RowBox[{"blockMembers", "[", 
     RowBox[{"program_", ",", "pos_", ",", "color_", ",", "checked_"}], "]"}], 
@@ -1099,6 +1054,51 @@ Cell[BoxData[
    3.551285739221537*^9}, {3.5512858033420143`*^9, 3.551285813268229*^9}, {
    3.551285853534245*^9, 3.5512858603214607`*^9}, {3.551285971929905*^9, 
    3.5512859726833487`*^9}, {3.5512864372245293`*^9, 3.551286500316855*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"neighbors", "[", 
+   RowBox[{"program_", ",", 
+    RowBox[{"{", 
+     RowBox[{"posX_", ",", "posY_"}], "}"}]}], "]"}], ":=", 
+  RowBox[{"Module", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"programMaxX", "=", 
+       RowBox[{"Length", "[", 
+        RowBox[{"program", "[", 
+         RowBox[{"[", "1", "]"}], "]"}], "]"}]}], ",", 
+      RowBox[{"programMaxY", "=", 
+       RowBox[{"Length", "[", "program", "]"}]}]}], "}"}], ",", 
+    RowBox[{"Cases", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"posX", "+", "1"}], ",", "posY"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"posX", "-", "1"}], ",", "posY"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"posX", ",", 
+          RowBox[{"posY", "+", "1"}]}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"posX", ",", 
+          RowBox[{"posY", "-", "1"}]}], "}"}]}], "}"}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"x_", ",", "y_"}], "}"}], "/;", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"1", "\[LessEqual]", "x", "\[LessEqual]", "programMaxX"}], "&&", 
+         RowBox[{"1", "\[LessEqual]", "y", "\[LessEqual]", "programMaxY"}]}], 
+        ")"}]}]}], "]"}]}], "\[IndentingNewLine]", "]"}]}]], "Input",
+ InitializationCell->True,
+ CellChangeTimes->{{3.551278678155098*^9, 3.551278945427126*^9}, {
+  3.551280844891515*^9, 3.551280845731185*^9}, {3.551280949888956*^9, 
+  3.551280958661724*^9}, {3.551282602373014*^9, 3.551282751490451*^9}}],
 
 Cell[BoxData[
  RowBox[{
@@ -4684,13 +4684,13 @@ Cell[30804, 923, 123, 2, 39, "Subsection",
  InitializationCell->True],
 Cell[30930, 927, 612, 15, 30, "Input",
  InitializationCell->True],
-Cell[31545, 944, 1587, 43, 145, "Input",
+Cell[31545, 944, 641, 16, 50, "Input",
  InitializationCell->True],
-Cell[33135, 989, 641, 16, 50, "Input",
+Cell[32189, 962, 887, 23, 69, "Input",
  InitializationCell->True],
-Cell[33779, 1007, 887, 23, 69, "Input",
+Cell[33079, 987, 3181, 68, 221, "Input",
  InitializationCell->True],
-Cell[34669, 1032, 3181, 68, 221, "Input",
+Cell[36263, 1057, 1587, 43, 145, "Input",
  InitializationCell->True],
 Cell[37853, 1102, 836, 21, 88, "Input",
  InitializationCell->True],
